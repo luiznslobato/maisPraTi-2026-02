@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="CINEBR: descubra filmes e séries brasileiras em um só lugar.">
+
+    <title>CINEBR | Cinema Brasileiro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+<script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                CINE<span>BR</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Apresentação -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <span class="hero-tag">O cinema nacional em destaque</span>
+
+                <h1>
+                    Descubra o melhor do
+                    <span>entretenimento brasileiro.</span>
+                </h1>
+
+                <p>
+                    Explore histórias, talentos e produções que representam
+                    a riqueza do cinema e das séries brasileiras.
+                </p>
+
+                <a href="#filmes" class="btn-primary">
+                    Explorar catálogo
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Filmes -->
+        <section class="catalogo container" id="filmes">
+
+            <div class="section-header">
+                <span class="section-tag">Nossa seleção</span>
+                <h2>Filmes brasileiros</h2>
+                <p>Conheça produções que marcaram o cinema nacional.</p>
+            </div>
+
+            <div class="catalog-controls">
+
+    <div class="busca-container">
+        <input
+            type="search"
+            id="busca-filmes"
+            placeholder="Buscar filmes..."
+            aria-label="Buscar filmes">
+
+        <button
+            type="button"
+            id="limpar-busca"
+            class="btn-limpar-busca"
+            aria-label="Limpar pesquisa"
+            title="Limpar pesquisa">
+            &times;
+        </button>
+    </div>
+
+</div>
+
+            <div class="cards-container" id="lista-filmes">
+                <!-- Os filmes serão carregados pela API -->
+            </div>
+
+        </section>
+
+        <!-- Séries -->
+        <section class="catalogo container" id="series">
+
+            <div class="section-header">
+                <span class="section-tag">Produções nacionais</span>
+                <h2>Séries brasileiras</h2>
+                <p>Descubra séries produzidas no Brasil.</p>
+            </div>
+
+            <div class="cards-container" id="lista-series">
+                <!-- As séries serão carregadas pela API -->
+            </div>
+
+        </section>
+
+        <!-- Sobre -->
+        <section class="sobre" id="sobre">
+
+            <div class="container sobre-content">
+
+                <span class="section-tag">Sobre o projeto</span>
+
+                <h2>Valorizar histórias brasileiras.</h2>
+
+                <p>
+                    O CINEBR é um catálogo dedicado à divulgação
+                    de filmes e séries brasileiras. Nosso objetivo
+                    é facilitar a descoberta de produções nacionais
+                    e valorizar a criatividade audiovisual do Brasil.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Contato -->
+        <section class="contato container" id="contato">
+
+            <div class="section-header">
+                <span class="section-tag">Fale conosco</span>
+                <h2>Entre em contato</h2>
+                <p>Envie sua mensagem ou sugestão.</p>
+            </div>
+
+            <form id="form-contato">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem"
+                        placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Enviar mensagem
+                </button>
+
+                <p id="retorno-formulario" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <a href="#inicio" class="logo">
+                CINE<span>BR</span>
+            </a>
+
+            <p>
+                © 2026 CINEBR — Valorizando o audiovisual brasileiro.
+            </p>
+<div class="creditos-tmdb">
+
+    <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+        <img src="images/tmdb-logo.svg" alt="The Movie Database (TMDB)" class="logo-tmdb">
+    </a>
+
+    <p>
+        Este produto utiliza a API do TMDB, mas não é endossado
+        nem certificado pelo TMDB.
+    </p>
+
+</div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

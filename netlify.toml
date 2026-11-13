@@ -1,0 +1,5 @@
+[build]
+  publish = "modulo-2/atividade-4-5/public"
+
+[functions]
+  directory = "modulo-2/atividade-4-5/netlify/functions"
